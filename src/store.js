@@ -51,13 +51,6 @@ const prettyMiddleware = (store, next, action) => {
 	console.log('In middleware', action);
 
 	next(action);
-
-	const date = new Date();
-
-	setTimeout(() => next({
-		type: 'CHANGE_USERNAME',
-		payload: 'Change name after 3 seconds, time = ' + date.getSeconds(),
-	}), 3000)
 }
 
 const store = createStore(

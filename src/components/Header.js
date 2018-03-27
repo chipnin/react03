@@ -17,7 +17,6 @@ class Header extends React.Component {
 	                <br/>
 	                Time {time}
                 </h1>
-                <button onClick={this._changeUsername(dispatch)}>Change username</button>
                 <nav>
                 	<ul>
                 		<li>
@@ -31,18 +30,7 @@ class Header extends React.Component {
             </div>
         )
     }
-
-    _changeUsername(dispatch) {
-        return (event) => {
-            dispatch(changeUsername('Baby'));
-        }
-    }
 }
-// action creator
-const changeUsername = (name) => ({
-    type: 'CHANGE_USERNAME',
-    payload: name
-})
 
 // Higher order function - currying
 // Return HOC - Higher order component
