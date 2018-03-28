@@ -1,4 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { CHANGE_USERNAME } from '../constants/action-types';
 
 const initialState = {
 	username: 'NgocTV',
@@ -9,7 +10,7 @@ const rootReducer = combineReducers({
 		console.log('In Reducer');
 
 		switch(action.type) {
-			case 'CHANGE_USERNAME':
+			case CHANGE_USERNAME:
 				return {
 					username: action.payload,
 				};

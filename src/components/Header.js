@@ -9,20 +9,17 @@ class Header extends React.Component {
 
     render() {
         const { username, dispatch } = this.props;
-        const { time } = this.props;
         return (
-            <div>
+            <div class="header">
                 <h1>
 	                Hello {username}
-	                <br/>
-	                Time {time}
                 </h1>
                 <nav>
-                	<ul>
-                		<li>
+                	<ul class="main-menu">
+                		<li class="main-menu__item">
 	                		<Link to="/">Home Page</Link>
 	                	</li>
-                		<li>
+                		<li class="main-menu__item">
                 			<Link to="/profile">Profile</Link>
 						</li>                			
                 	</ul>

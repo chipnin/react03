@@ -11,9 +11,11 @@ class App extends React.Component {
         	<div class="container">
 	            <BrowserRouter>
         			<div>
-        				<Header time="15:30" />
-            			<Route exact path="/" component={HomePage} />
-            			<Route path="/profile" component={Profile} />
+        				<Header />
+                        <div class="main-content">
+                			<Route exact path="/" component={HomePage} />
+                			<Route path="/profile" component={Profile} />
+                        </div>
 	            	</div>
 	            </BrowserRouter>
             </div>

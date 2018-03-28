@@ -7,9 +7,9 @@ import ProfilePassword from './ProfilePassword';
 class Profile extends React.Component {
     render() {
         return (
-        	<div>
+        	<div class="profile">
 	            <h1>Profile</h1>
-	            <div>
+	            <div class="profile__menu">
 	            	<Link to="/profile/info">Info</Link>
 	            	<Link to="/profile/password">Password</Link>
 	            </div>

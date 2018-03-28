@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { changeUsername } from '../actions/index';
 
 class ProfileInfo extends React.Component {
 	constructor(props) {
@@ -18,7 +19,7 @@ class ProfileInfo extends React.Component {
     	const username = this.state.username;
 
         return (
-        	<div>
+        	<div class="profile-info">
             	<h1>Profile Info</h1>
 
             	<input type="text" value={username} onChange={this.handleChange} />
@@ -37,12 +38,6 @@ class ProfileInfo extends React.Component {
     	}
     }
 }
-
-// action creator
-const changeUsername = (name) => ({
-    type: 'CHANGE_USERNAME',
-    payload: name
-})
 
 // export default ProfileInfo;
 export default connect(state => ({
