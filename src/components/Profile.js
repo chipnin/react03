@@ -15,7 +15,7 @@ class Profile extends React.Component {
 	            </div>
             	<Route exact path="/profile/info" component={ProfileInfo} />
     			<Route exact path="/profile/password" component={ProfilePassword} />
-	            <Redirect to="/profile/info" />
+	            {/*<Redirect to="/profile/info" />*/}
             </div>
         )
     }
